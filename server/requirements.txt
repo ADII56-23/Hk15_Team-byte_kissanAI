@@ -9,3 +9,4 @@ python-dotenv
 sqlalchemy
 httpx
 requests
+python-multipart
