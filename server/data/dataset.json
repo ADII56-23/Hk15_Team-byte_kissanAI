@@ -1,0 +1,715 @@
+[
+  {
+    "timestamp": "2026-02-21T01:23:13.882351",
+    "task_type": "kisaan_query",
+    "input": {
+      "query": "market",
+      "language": "English"
+    },
+    "output": {
+      "response": "Please provide me with more context. I need to know what you're interested in regarding the market to give you useful information. For example, are you interested in:\n\n*   **Market trends for a specific crop?** (e.g., \"Market trends for corn\")\n*   **Finding buyers for your produce?** (e.g., \"How do I find buyers for my tomatoes?\")\n*   **Understanding market regulations?** (e.g., \"Overview of market regulations for organic produce\")\n*   **Learning about farmer's markets?**\n*   **Direct marketing strategies?**\n*   **Or something else?**\n",
+      "specialist": "Dr. Kisaan AI",
+      "category": "Agricultural Expertise"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:23:48.851903",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Prioritize activating the central pivot irrigation system due to low soil moisture. Apply nitrogen fertilizer in Plot B to maximize absorption before potential light rain.",
+      "detailed_reasons": [
+        "Soil moisture is 71% deficient, necessitating immediate irrigation.",
+        "A window of opportunity exists to apply nitrogen fertilizer before potential light rain.",
+        "Sufficient labor is available to begin the early harvest in the North Sector."
+      ],
+      "risk_warning": "Delaying irrigation may lead to crop stress and yield reduction. Failure to fertilize can lead to nutrient deficiency of crops in Plot B.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:23:50.690126",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Today's priorities are irrigation and fertilization. Start by activating the central pivot irrigation system and then apply nitrogen fertilizer to Plot B.",
+      "detailed_reasons": [
+        "Soil moisture is deficient, requiring immediate irrigation.",
+        "A window exists for effective fertilizer absorption before potential rain.",
+        "Crops in the North Sector have reached maturity, necessitating an early harvest."
+      ],
+      "risk_warning": "Delaying irrigation and fertilization could lead to crop stress and reduced yields. Postponing the harvest will result in spoilage and significant losses.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:24:04.513968",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Today's focus should be on immediate irrigation due to low soil moisture and initiating the early harvest in the North Sector. Apply nitrogen fertilizer to Plot B to maximize absorption before potential rain.",
+      "detailed_reasons": [
+        "Soil moisture is critically low, indicating a 71% deficiency requiring immediate irrigation action.",
+        "Crop maturity has been reached in the North Sector, and sufficient labor is available for harvesting.",
+        "The current soil temperature is optimal for nitrogen fertilizer absorption, enhancing its effectiveness."
+      ],
+      "risk_warning": "Delaying irrigation will stress the corn crop, potentially impacting yield. Postponing harvest may lead to crop losses due to spoilage.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:24:06.437033",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Prioritize activating the central pivot irrigation system due to low soil moisture. Apply nitrogen fertilizer to Plot B and initiate early harvest in the North Sector.",
+      "detailed_reasons": [
+        "Soil moisture is 71% deficient, necessitating immediate irrigation.",
+        "A window of opportunity for fertilizer application exists before potential light rain.",
+        "Corn crop in the North Sector has reached maturity, and sufficient labor is available."
+      ],
+      "risk_warning": "Delaying irrigation and fertilizer application may lead to crop stress and reduced yields; postponing harvest may result in crop spoilage and further losses.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:25:26.500545",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Today's focus should be on irrigation and fertilization. Activate the central pivot irrigation system and apply nitrogen fertilizer to Plot B.",
+      "detailed_reasons": [
+        "Soil moisture is low, with a 71% deficiency.",
+        "Rain probability is low (15%).",
+        "Crop maturity reached in North Sector, and there is sufficient labor for harvesting."
+      ],
+      "risk_warning": "Delaying irrigation will stress the corn crop due to low soil moisture. Postponing harvest can result in crop loss due to potential degradation.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:25:28.588194",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Initiate central pivot irrigation immediately due to low soil moisture and minimal chance of rain. Apply nitrogen fertilizer to Plot B while conditions are optimal and begin the early harvest in the North Sector, taking advantage of available labor.",
+      "detailed_reasons": [
+        "Soil moisture is critically low, indicating a 71% deficiency.",
+        "The window for fertilizer application is optimal before any potential light rain.",
+        "The corn crop in the North Sector has reached maturity and sufficient labor is available for harvesting."
+      ],
+      "risk_warning": "Delaying irrigation will stress the corn crop, reduce yield, and increase vulnerability to pests. Postponing fertilizer application could result in nutrient deficiencies. Failure to begin harvesting in the North Sector today may lead to crop loss.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:28:01.068712",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Today's focus is on irrigating due to low soil moisture and applying nitrogen fertilizer in Plot B while the weather is favorable. Initiate early harvest in the North Sector to capitalize on crop maturity and available labor.",
+      "detailed_reasons": [
+        "Soil moisture is 71% deficient, requiring immediate irrigation.",
+        "Low rain probability (15%) creates an optimal window for fertilizer application.",
+        "Corn in the North Sector has reached maturity, and sufficient labor is available for harvesting."
+      ],
+      "risk_warning": "Delaying irrigation may lead to crop stress and yield reduction, while postponing fertilizer application could reduce its effectiveness. Failing to harvest the North Sector on time may lead to crop spoilage and financial loss.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:28:02.869182",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Prioritize activating the central pivot irrigation system due to critically low soil moisture. Following irrigation, proceed with applying nitrogen fertilizer to Plot B while conditions are optimal.",
+      "detailed_reasons": [
+        "Soil moisture is deficient by 71%, necessitating immediate irrigation.",
+        "A window of opportunity exists to apply nitrogen fertilizer before potential rain, and soil temperature is ideal for absorption.",
+        "Crops in the North Sector are mature and should be harvested today considering the labor on hand. "
+      ],
+      "risk_warning": "Delaying irrigation will cause crop stress and reduced yield. Postponing fertilizer application due to rain will reduce its effectiveness.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:28:05.266321",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Prioritize irrigation of the cornfields immediately due to low soil moisture and minimal chance of rain; activate the central pivot irrigation system. Secondly, apply nitrogen fertilizer to Plot B to optimize absorption given the current soil temperature and before potential rainfall.",
+      "detailed_reasons": [
+        "Soil moisture is 71% deficient, requiring immediate irrigation.",
+        "Low rain probability (15%) necessitates proactive irrigation measures.",
+        "Nitrogen fertilizer application is optimal due to ideal soil temperature and a window before potential rainfall."
+      ],
+      "risk_warning": "Delaying irrigation will stress the corn crop, potentially reducing yield and quality. Failure to fertilize Plot B promptly could result in decreased nutrient uptake and stunted growth.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:28:07.263087",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Prioritize activating the central pivot irrigation due to low soil moisture and minimal chance of rain. Apply nitrogen fertilizer to Plot B and begin the early harvest in the North Sector, taking advantage of available labor.",
+      "detailed_reasons": [
+        "Soil moisture is 71% below optimal levels, necessitating immediate irrigation.",
+        "The weather forecast indicates minimal chance of rain, providing a window for fertilizer application.",
+        "Crops in the North Sector have reached maturity, and sufficient labor is available for harvesting."
+      ],
+      "risk_warning": "Failure to irrigate promptly will lead to crop stress and reduced yields. Delaying fertilizer application may reduce its effectiveness, and postponing the harvest could result in losses due to over-maturity or potential spoilage.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:28:08.974450",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Activate the central pivot irrigation system immediately due to low soil moisture. Apply nitrogen fertilizer to Plot B to optimize absorption before potential rain.",
+      "detailed_reasons": [
+        "Soil moisture is 71% deficient and rain probability is low (15%).",
+        "Optimal window to apply nitrogen fertilizer before potential rain.",
+        "Corn crop has reached maturity in the North Sector."
+      ],
+      "risk_warning": "Delaying irrigation will cause crop stress and reduce yield. Failure to harvest the North Sector today may lead to crop loss due to over-maturity.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:28:10.802435",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Prioritize irrigation due to low soil moisture and minimal rain chance. Apply nitrogen fertilizer in Plot B and begin early harvest in North Sector since crops are ready and labor is available.",
+      "detailed_reasons": [
+        "Soil moisture is 71% deficient, necessitating immediate irrigation.",
+        "A window of opportunity exists for fertilizer application before light rain.",
+        "Corn in the North Sector has reached maturity, and sufficient labor is available for harvest."
+      ],
+      "risk_warning": "Delaying irrigation could lead to crop stress and yield reduction. Postponing fertilizer application may be less effective if rain occurs. Failure to harvest will result in crop loss.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:29:14.400258",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Initiate central pivot irrigation due to low soil moisture and minimal chance of rain. Apply nitrogen fertilizer to Plot B while temperatures are optimal and before any potential rain.",
+      "detailed_reasons": [
+        "Soil moisture is 71% deficient, necessitating immediate irrigation.",
+        "Low rain probability creates an optimal window for fertilizer application.",
+        "Crop maturity in the North Sector requires initiating the early harvest with the available labor."
+      ],
+      "risk_warning": "Delaying irrigation may lead to crop stress and yield reduction. Failure to apply fertilizer within the short window could lead to decreased nitrogen absorption efficiency.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  },
+  {
+    "timestamp": "2026-02-21T01:29:16.473211",
+    "task_type": "farm_prediction",
+    "input": {
+      "soil_moisture": 0.35,
+      "temperature": 31.5,
+      "humidity": 45.0,
+      "rain_probability": 0.15,
+      "crop_type": "Corn",
+      "labor_available": 7
+    },
+    "output": {
+      "tasks": [
+        {
+          "id": "irrigation",
+          "task": "Activate Central Pivot Irrigation",
+          "category": "Irrigation",
+          "base_score": 0.751,
+          "reason": "Soil moisture levels are low (71% deficiency) and rain probability is low (15%)."
+        },
+        {
+          "id": "fertilizer",
+          "task": "Apply Nitrogen Fertilizer (Plot B)",
+          "category": "Maintenance",
+          "base_score": 0.6008,
+          "reason": "Optimal window before any potential light rain; soil temperature is ideal for absorption."
+        },
+        {
+          "id": "harvest",
+          "task": "Begin Early Harvest - North Sector",
+          "category": "Harvest",
+          "base_score": 0.5257,
+          "reason": "Crop maturity reached. Sufficient labor is available to complete the sector today."
+        }
+      ],
+      "irrigation_prediction": {
+        "irrigation_urgency": "High",
+        "urgency_score": 0.71
+      },
+      "explanation": "Initiate central pivot irrigation immediately due to low soil moisture and minimal chance of rain. Apply nitrogen fertilizer to Plot B to maximize absorption while soil temperature is ideal and before any anticipated precipitation.",
+      "detailed_reasons": [
+        "Soil moisture is 71% below optimal levels, necessitating immediate irrigation.",
+        "The current soil temperature is ideal for nitrogen fertilizer absorption, enhancing effectiveness.",
+        "Crop maturity in the North Sector warrants commencement of early harvest operations today with sufficient labor."
+      ],
+      "risk_warning": "Delaying irrigation will stress the Corn crop, potentially reducing yield and quality. Postponing fertilizer application may reduce its effectiveness, leading to nutrient deficiencies.",
+      "confidence_score": 0.95,
+      "data_warning": null
+    }
+  }
+]
